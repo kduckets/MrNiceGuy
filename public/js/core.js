@@ -1,4 +1,4 @@
-var app = angular.module('scotchTodo', ['todoController', 'todoService', 'ezfb', 'ngRoute'])
+var app = angular.module('mrniceguy', ['todoController', 'todoService', 'ezfb', 'ngRoute'])
 
 .constant('SOCIAL_PLUGINS', [
   'like', 'share-button', 'send', 'post', 'video', 
