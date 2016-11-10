@@ -1,0 +1,69 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="scotchTodo">
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+	<title>Say Something Nice</title>
+
+
+	<!-- SCROLLS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<style>
+		html 					{ overflow-y:scroll; }
+		body 					{ padding-top:50px; }
+		#todo-list 				{ margin-bottom:30px; }
+		#todo-form 	 			{ margin-bottom:50px; }
+	</style>
+
+	<!-- SPELLS -->
+	 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	 <script data-require="angular-route@1.4.x" data-semver="1.4.3" src="http://code.angularjs.org/1.4.3/angular-route.min.js"></script>
+     <script src="http://pc035860.github.io/angular-easyfb/angular-easyfb.min.js"></script>
+
+	<script src="js/controllers/main.js"></script> <!-- load up our controller -->
+	<script src="js/services/todos.js"></script> <!-- load our todo service -->
+	<script src="js/core.js"></script> <!-- load our main application -->
+
+</head>
+<!-- SET THE CONTROLLER -->
+<body ng-controller="mainController">
+      
+     
+    <!-- <script type="text/ng-template" id="comments-count.html">
+      <div ng-if="pluginOn" onrender="rendered()" class="fb-comments-count" data-href="http://example.com/comments"></div>
+    </script> -->
+
+	<div class="container">
+
+	
+
+		<!-- HEADER AND TODO COUNT -->
+	<!-- 	<div class="jumbotron text-center">
+			<h1>I'm a Todo-aholic <span class="label label-info">{{ todos.length }}</span></h1>
+		</div> -->
+
+			<div class="jumbotron text-center">
+			<h1>Say Something Nice</h1>
+				<p>We are all Americans. We are all on the same team. Please use this forum to say something nice about members of the other party. Any hateful or argumentitve comments will be moderated.</p>
+		</div>
+
+        <div class="col-md-6">
+		<h5 style="color:blue"><b>Democrats, say something nice.</b></h5>
+		  <div onrender="rendered()" class="fb-comments" data-numposts="10" data-href="http://test.com/comments1" data-colorscheme="light"></div>
+		  </div>
+		  <div class="col-md-6">
+		  <h5 style="color:red"><b>Republicans, say something nice.</b></h5>
+      <div onrender="rendered()" class="fb-comments" data-numposts="10" data-href="http://test.com/comments2" data-colorscheme="light"></div>
+      </div>
+    </div>
+    
+    
+    
+
+</body>
+</html>
