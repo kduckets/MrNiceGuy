@@ -13,6 +13,7 @@
 	<!-- SCROLLS -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<style>
 		html 					{ overflow-y:scroll; }
 		body 					{ padding-top:50px; }
@@ -35,14 +36,17 @@
 	<div class="container">
 
 			<div class="jumbotron text-center">
-			<h1>Mr. Nice Guy</h1>
-				<p><small>We are all Americans. We are all on the same team. There is too much negativity out there right now. Please use this forum to say something positive. Any hateful or argumentitve comments will be moderated.</small></p>
-		</div>
+			<h1 style="font-family: 'Pacifico', cursive;">Mr. Nice Guy</h1>
+			 <div style="padding-bottom:20px" onrender="rendered()" class="fb-share-button" data-href="https://mrniceguy.herokuapp.com" data-type="button_count"></div>
+				<p><small>Please use this forum to say something positive. Any hateful or argumentitve comments will be moderated.</small></p>
 
+		</div>
+               
         <div class="col-md-6" style="background-color:#b7e4fa; padding-top:10px">
 		<h5 style="color:blue"><b>Democrats, say something positive.</b></h5>
 		  <div onrender="rendered()" class="fb-comments" data-numposts="10" data-href="http://test.com/comments1" data-colorscheme="light"></div>
 		  </div>
+
 		  <div class="col-md-6" style="background-color:#ffd8d8; padding-top:10px">
 		  <h5 style="color:red"><b>Republicans, say something positive.</b></h5>
       <div onrender="rendered()" class="fb-comments" data-numposts="10" data-href="http://test.com/comments2" data-colorscheme="light"></div>
